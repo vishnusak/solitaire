@@ -1,0 +1,131 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: rgb(34, 34, 34);
+  width: 80vw;
+  margin: auto;
+  overflow: hidden;
+}
+
+img{
+  width: calc(9 * (1vh + 1vw) / 2);
+  height: calc(12 * (1vh + 1vw) / 2);
+  border-radius: 5px;
+}
+
+img:hover{
+  cursor: pointer;
+}
+
+.top{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: calc(15 * (1vh + 1vw) / 2);
+  margin: 2.5vh auto;
+}
+  #deck,
+  #open{
+    background-color: gray;
+    width: calc(9 * (1vh + 1vw) / 2);
+    max-width: calc(9 * (1vh + 1vw) / 2);
+    min-width: calc(9 * (1vh + 1vw) / 2);
+    height: calc(12 * (1vh + 1vw) / 2);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .suits{
+    width: 70%;
+    height: calc(15 * (1vh + 1vw) / 2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid darkgray;
+  }
+    .suits>div{
+      background-color: gray;
+      width: calc(9 * (1vh + 1vw) / 2);
+      max-width: calc(9 * (1vh + 1vw) / 2);
+      min-width: calc(9 * (1vh + 1vw) / 2);
+      height: calc(12 * (1vh + 1vw) / 2);
+      border-radius: 5px;
+    }
+    .suits #clubs{
+      background-image: url('img/black_club_suit.png');
+      background-position: center;
+    }
+    .suits #hearts{
+      background-image: url('img/black_heart_suit.png');
+      background-position: center;
+    }
+    .suits #spades{
+      background-image: url('img/black_spade_suit.png');
+      background-position: center;
+    }
+    .suits #diamonds{
+      background-image: url('img/black_diamond_suit.png');
+      background-position: center;
+    }
+
+.bottom{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+  .bottom>div{
+    background-color: gray;
+    width: calc(9 * (1vh + 1vw) / 2);
+    max-width: calc(9 * (1vh + 1vw) / 2);
+    min-width: calc(9 * (1vh + 1vw) / 2);
+    height: calc(12 * (1vh + 1vw) / 2);
+    border-radius: 5px;
+  }
+
+canvas{
+  width: calc(9 * (1vh + 1vw) / 2);
+  height: calc(12 * (1vh + 1vw) / 2);
+}
+
+#auto{
+  width: 15%;
+  position: absolute;
+  bottom: 5vh;
+  left: 42.5vw;
+  color: black;
+  background-color: gray;
+  text-align: center;
+  font-size: calc(2 * (1vw + 1vh) / 2);
+  padding: 1vh 1vw;
+  border-radius: calc(5 * (1vw + 1vh) / 2);
+  cursor: pointer;
+}
+
+#gameover{
+  width: 30%;
+  position: absolute;
+  top: 40vh;
+  left: 35vw;
+  color: yellow;
+  background-color: navy;
+  text-align: center;
+  font-size: calc(3.5 * (1vw + 1vh) / 2);
+  padding: 1vh 0.5vw;
+  border-radius: calc(5 * (1vw + 1vh) / 2);
+  cursor: pointer;
+}
+
+.show{
+  display: '';
+}
+
+.hide{
+  display: none;
+}
